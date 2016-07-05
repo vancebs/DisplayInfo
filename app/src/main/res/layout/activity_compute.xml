@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.hf.displayinfo.ComputeActivity">
+
+    <TextView
+        android:id="@+id/resolution_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/resolution_label"/>
+
+    <EditText
+        android:id="@+id/resolution_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/resolution_label"
+        android:layout_toRightOf="@id/resolution_label"
+        android:hint="@string/resolution_width_hint"/>
+
+    <TextView
+        android:id="@+id/x_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/resolution_label"
+        android:layout_toRightOf="@id/resolution_width"
+        android:text="@string/x_label" />
+
+    <EditText
+        android:id="@+id/resolution_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/resolution_label"
+        android:layout_toRightOf="@id/resolution_label"
+        android:hint="@string/resolution_height_hint"/>
+
+    <TextView
+        android:id="@+id/size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resolution_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/screen_size_label"/>
+
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/size_label"
+        android:layout_toRightOf="@id/size_label"/>
+
+</RelativeLayout>
